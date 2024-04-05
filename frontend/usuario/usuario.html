@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./usuario.css" />
+    <title>Pizzaria - Usuário</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="../saudacao.html"><img src="../img/logo.png" alt="pizza" class="img-logo" /></a>
+
+        <nav class="navbar">
+          <a href="#" class="navbar-item">Usuário</a>
+          <a href="../funcionario/funcionario.html" class="navbar-item">Funcionário</a>
+          <a href="../ingrediente/ingrediente.html" class="navbar-item">Ingrediente</a>
+          <a href="../tipo-ingrediente/tipo-ingrediente.html" class="navbar-item">Tipo de Ingrediente</a>
+          <a href="../lote/lote.html" class="navbar-item">Lote</a>
+          <a href="../fornecedor/fornecedor.html" class="navbar-item">Fornecedor</a>
+          <a href="../pizza/pizza.html" class="navbar-item">Pizza</a>
+          <a href="../franquia/franquia.html" class="navbar-item">Franquia</a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="section-register">
+          <section id="forms-usuario">
+            <div class="section-form">
+              <label for="input-usuario-email">E-mail:</label>
+              <input type="email" id="input-usuario-email" name="input-usuario-email" maxlength="100" placeholder="avengers@email.com"/>
+            </div>
+
+            <div class="section-form">
+              <label for="input-usuario-login">Login:</label>
+              <input type="text" id="input-usuario-login" name="input-usuario-login" maxlength="30"/>
+            </div>
+
+            <div class="section-form">
+              <label for="input-usuario-senha">Senha:</label>
+              <input type="password" id="input-usuario-senha" name="input-usuario-senha" maxlength="30"/>
+            </div>
+
+            <div class="section-btn">
+              <button id="btn-usuario-cadastro" class="btn-register" >Cadastrar</button>
+              <button id="btn-usuario-cancelar" class="btn-register">Cancelar</button>
+            </div>
+          </section>
+
+          <img src="../img/logo-pizza.png" alt="Logo" class="section-logo" />
+          <span id="user">Usuário</span>
+          <span class="background-user"></span>
+        </section>
+
+        <section class="section-table table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>E-mail</th>
+                <th>Login</th>
+                <th>Senha</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-usuario">
+
+            </tbody>
+          </table>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-copyright">
+          <p>&copy;</p>
+          <p class="footer-paragraph">Avengers</p>
+        </div>
+        <p class="footer-paragraph">Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <script src="./usuario.js"></script>
+  </body>
+</html>

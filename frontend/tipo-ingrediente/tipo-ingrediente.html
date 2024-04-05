@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./tipo-ingrediente.css" />
+    <title>Pizzaria - Tipo de Ingrediente</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="../saudacao.html"><img src="../img/logo.png" alt="pizza" class="img-logo" /></a>
+
+        <nav class="navbar">
+          <a href="../usuario/usuario.html" class="navbar-item">Usuário</a>
+          <a href="../funcionario/funcionario.html" class="navbar-item">Funcionário</a>
+          <a href="../ingrediente/ingrediente.html" class="navbar-item">Ingrediente</a>
+          <a href="#" class="navbar-item">Tipo de Ingrediente</a>
+          <a href="../lote/lote.html" class="navbar-item">Lote</a>
+          <a href="../fornecedor/fornecedor.html" class="navbar-item">Fornecedor</a>
+          <a href="../pizza/pizza.html" class="navbar-item">Pizza</a>
+          <a href="../franquia/franquia.html" class="navbar-item">Franquia</a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="section-register">
+          <section id="forms-tipo-ingrediente">
+            <div class="section-form">
+              <label for="input-tipo-ingrediente-nome">Nome:</label>
+              <input type="text" id="input-tipo-ingrediente-nome" name="input-tipo-ingrediente-nome" maxlength="30">
+            </div>
+
+            <div class="section-btn">
+              <button id="btn-tipo-ingrediente-cadastro" class="btn-register">Cadastrar</button>
+              <button id="btn-tipo-ingrediente-cancelar" class="btn-register">Cancelar</button>
+            </div>
+          </section>
+
+          <img src="../img/logo-pizza.png" alt="Logo" class="section-logo" />
+          <span id="type-ingredients">Tipo de Ingredientes</span>
+          <span class="background-type-ingredients"></span>
+        </section>
+
+        <section class="section-table table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-tipo-ingrediente">
+
+            </tbody>
+          </table>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-copyright">
+          <p>&copy;</p>
+          <p class="footer-paragraph">Avengers</p>
+        </div>
+        <p class="footer-paragraph">Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <script src="./tipo-ingrediente.js"></script>
+  </body>
+</html>

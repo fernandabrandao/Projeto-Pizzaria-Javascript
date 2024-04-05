@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./lote.css" />
+    <title>Pizzaria - Lote</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="../saudacao.html"><img src="../img/logo.png" alt="pizza" class="img-logo" /></a>
+
+        <nav class="navbar">
+          <a href="../usuario/usuario.html" class="navbar-item">Usuário</a>
+          <a href="../funcionario/funcionario.html" class="navbar-item">Funcionário</a>
+          <a href="../ingrediente/ingrediente.html" class="navbar-item">Ingrediente</a>
+          <a href="../tipo-ingrediente/tipo-ingrediente.html" class="navbar-item">Tipo de Ingrediente</a>
+          <a href="#" class="navbar-item">Lote</a>
+          <a href="../fornecedor/fornecedor.html" class="navbar-item">Fornecedor</a>
+          <a href="../pizza/pizza.html" class="navbar-item">Pizza</a>
+          <a href="../franquia/franquia.html" class="navbar-item">Franquia</a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="section-register">
+          <section id="forms-lote">
+            <div class="section-form">
+              <label for="input-lote-data-compra">Data de Compra:</label>
+              <input type="text" id="input-lote-data-compra" name="input-lote-data-compra" placeholder="2020-12-01"/>
+            </div>
+
+            <div class="section-form">
+              <label for="input-lote-data-validade">Data de Validade:</label>
+              <input type="text" id="input-lote-data-validade" name="input-lote-data-validade" placeholder="2020-12-01"/>
+            </div>
+
+            <div class="section-form">
+              <label for="input-lote-quantidade">Quantidade:</label>
+              <input type="number" id="input-lote-quantidade" name="input-lote-quantidade">
+            </div>
+
+            <div class="section-form">
+              <label for="input-lote-preco">Preço:</label>
+              <input type="number" id="input-lote-preco" name="input-lote-preco" maxlength="11">
+            </div>
+
+            <div class="section-form">
+              <label for="select-lote-ingrediente">Ingrediente:</label>
+              <select id="select-lote-ingrediente" name="select-lote-ingrediente">
+                <option id="option-lote-ingrediente" value="none" disabled selected>Selecione uma opção</option>
+              </select>
+            </div>
+
+            <div class="section-btn">
+              <button id="btn-lote-cadastro" class="btn-register">Cadastrar</button>
+              <button id="btn-lote-cancelar" class="btn-register">Cancelar</button>
+            </div>
+          </section>
+
+          <img src="../img/logo-pizza.png" alt="Logo" class="section-logo" />
+          <span id="batch">Lote</span>
+          <span class="background-batch"></span>
+        </section>
+
+        <section class="section-table table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Data de Compra</th>
+                <th>Data de Validade</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Id Ingredientes</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-lote">
+              
+            </tbody>
+          </table>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-copyright">
+          <p>&copy;</p>
+          <p class="footer-paragraph">Avengers</p>
+        </div>
+        <p class="footer-paragraph">Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <script src="./lote.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Pizzaria - Início</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="#"><img src="./img/logo.png" alt="pizza" class="img-logo" /></a>
+
+        <nav class="navbar">
+          <a href="./usuario/usuario.html" class="navbar-item">Usuário</a>
+          <a href="./funcionario/funcionario.html" class="navbar-item">Funcionário</a>
+          <a href="./ingredientes/ingrediente.html" class="navbar-item">Ingrediente</a>
+          <a href="./tipo-ingrediente/tipo-ingrediente.html" class="navbar-item">Tipo de Ingrediente</a>
+          <a href="./lote/lote.html" class="navbar-item">Lote</a>
+          <a href="./fornecedor/fornecedor.html" class="navbar-item">Fornecedor</a>
+          <a href="./pizza/pizza.html" class="navbar-item">Pizza</a>
+          <a href="./franquia/franquia.html" class="navbar-item">Franquia</a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="section-login">
+          <section id="forms-login">
+            <div class="section-form">
+              <label for="input-index-login">Login:</label>
+              <input type="text" id="input-index-login" name="input-index-login" maxlength="30" />
+            </div>
+
+            <div class="section-form">
+              <label for="input-index-senha">Senha:</label>
+              <input type="password" id="input-index-senha" name="input-index-senha" maxlength="30" />
+            </div>
+
+            <button id="btn-index-login" class="btn-login">Entrar</button>
+          </section>
+
+          <img src="./img/logo-pizza.png" alt="Logo" class="section-logo" />
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-copyright">
+          <p>&copy;</p>
+          <p class="footer-paragraph">Avengers</p>
+        </div>
+        <p class="footer-paragraph">Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>
